@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="baidu-site-verification" content="t7oDT96Amk">
+<title>唯品会手机版</title>
+<meta content="" name="keywords">
+<meta content="" name="description">
+<meta name="sogou_site_verification" content="G7nmLR75yc">
+<meta name="baidu-tc-cerfication" content="0a8c6d28b570b218f78510c29be4529b">
+<meta name="360-site-verification" content="8b6121969d78afda8caeb69053fa29d9">
+
+
+<link rel="stylesheet" href="style/c3e09ac36d.css">
+<link rel="stylesheet" href="style/86fe49ca90.css">
+<link rel="stylesheet" type="text/css" href="style/footer.css">
+
+
+<script>__STAT.add('head_load');</script>
+
+</head>
+
+<body style="padding-bottom: 45px;" class=" hPC">
+
+
+
+<!--客户端下载的图片-->
+ 
+
+		<header id="header" class="u-header clearfix">
+	    <!--返回按钮根据程序判断来源，返回上一级-->
+		 		 <!-- 非微信扫码进入的用户 -->
+	    <div class="u-hd-left f-left">
+                <a href="javascript:void(0)" class="J_backToPrev"><span class="u-icon i-hd-back"></span></a>
+                </div>
+			     <div class="u-hd-tit"><span>新增配送地址</span></div>
+      		 	</header>
+	
+<div class="connerdiv">
+  <form name="addressForm_" action="index.php?m=user&amp;act=address&amp;step=save&amp;filter=update" method="POST">
+    <input name="address_id" value="" type="hidden">
+    <input name="filter" value="add" type="hidden">
+    <input name="flag" value="0" type="hidden">
+    <input name="mk" value="" type="hidden">
+    <dl class="connerbox">
+      <dd><span class="form_hd">姓名：</span><span class="form_td"><input name="consignee" maxlength="50" class="text_input" type="text"></span></dd>
+      <dd><span class="form_hd">手机：</span><span class="form_td"><input name="mobile" maxlength="11" class="text_input" type="text"></span></dd>
+      <dd><span class="form_hd">省份：</span>
+         <span class="form_td"><select id="province" name="province" onChange="getShopArea(this, 'city')" class="text_select">
+    	   <option selected="selected" value="0">请选择</option>
+    	       	   <option value="101101">北京市</option>
+    	       	   <option value="101102">天津市</option>
+    	       	   <option value="101103">河北省</option>
+    	       	   <option value="101104">山西省</option>
+    	       	   <option value="101105">内蒙古自治区</option>
+    	       	   <option value="102101">辽宁省</option>
+    	       	   <option value="102102">吉林省</option>
+    	       	   <option value="102103">黑龙江省</option>
+    	       	   <option value="103101">上海市</option>
+    	       	   <option value="103102">江苏省</option>
+    	       	   <option value="103103">浙江省</option>
+    	       	   <option value="103104">安徽省</option>
+    	       	   <option value="103105">福建省</option>
+    	       	   <option value="103106">江西省</option>
+    	       	   <option value="103107">山东省</option>
+    	       	   <option value="104101">河南省</option>
+    	       	   <option value="104102">湖北省</option>
+    	       	   <option value="104103">湖南省</option>
+    	       	   <option value="104104">广东省</option>
+    	       	   <option value="104105">广西壮族自治区</option>
+    	       	   <option value="104106">海南省</option>
+    	       	   <option value="105100">重庆市</option>
+    	       	   <option value="105101">四川省</option>
+    	       	   <option value="105102">贵州省</option>
+    	       	   <option value="105103">云南省</option>
+    	       	   <option value="105104">西藏自治区</option>
+    	       	   <option value="106101">陕西省</option>
+    	       	   <option value="106102">甘肃省</option>
+    	       	   <option value="106103">青海省</option>
+    	       	   <option value="106104">宁夏回族自治区</option>
+    	       	   <option value="106105">新疆维吾尔自治区</option>
+    	            </select></span>
+         <span class="i_up_arrow"></span></dd>
+      <dd><span class="form_hd">城市：</span>
+         <span class="form_td">
+         <select id="city" name="city" onChange="getShopArea(this, 'district')" class="text_select">
+    	   <option selected="selected" value="0">请选择</option>
+    	            </select></span>
+         <span class="i_up_arrow"></span></dd>
+      <dd><span class="form_hd">区县：</span>
+         <span class="form_td">
+         <select id="district" name="district" onChange="getShopArea(this, 'street');getPostcode()" class="text_select">
+    	   <option selected="selected" value="0">请选择</option>
+    	            </select></span>
+         <span class="i_up_arrow"></span></dd>
+      <dd><span class="form_hd">街道：</span>
+         <span class="form_td">
+         <select id="street" name="street" class="text_select" oncha="">
+    	   <option selected="selected" value="0">请选择</option>
+    	       	   <option value="-1">无</option>
+    	         </select></span><span class="i_up_arrow"></span></dd>
+      <dd><span class="form_hd">邮编：</span><span class="form_td"><input name="postcode" maxlength="6" class="text_input" id="postcode" type="text"></span></dd>
+      </dl>
+      <dl class="connerbox">
+        <dd><span class="form_hd">收货时间：</span>
+        <span class="form_td ml80">
+        <select id="transport_day" name="transport_day" class="text_select" oncha="">
+          <option selected="selected" value="0">请选择</option>
+          <option value="1">送货时间不限</option>
+          <option value="2">只双休日/节假日送货(工作日不用送)</option>
+          <option value="3">只工作日(双休日/节假日不用送)</option>
+        </select>
+      </span><span class="i_up_arrow"></span></dd>
+      </dl>
+      <dl class="connerbox"><dd><span>详情地址：</span><textarea name="address" rows="5" class="textarea_input textarea_address"></textarea></dd></dl>
+      <div class="ui-btn-area">
+        <input data-commit="address" class="btn_red" data-istempuser="false" data-loading-text="正在提交..." value="完成" type="button">
+      </div>
+  </form>
+  </div>
+
+
+<div class="space10"></div>
+
+
+  	  	  	  	  <div class="layout-login-area" id="footer">
+			     <div class="layout-login">
+						<span class="layout-lg-bar">528062317@qq.com </span>
+						<span class="layout-new-fr"><a href="">反馈</a></span>
+			     </div>
+
+			     <div class="layout-copyright">© 河北-向暖 版权所有</div>
+	      </div>
+	
+<!--以下是底部样式-->
+<div style="display: block;" class="footer_bar openwebview">
+        <ul class="warp clearfix">
+            <li><!--<li class="on">-->
+                <a href="/home/index" page_click_button="底部_首页">
+                    <i class="new_icon"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="fenlei.html" page_click_button="底部_品牌">
+                    <i class="new_icon"></i>
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="user.html" data-url="/i/index" page_click_button="底部_我的" class="to_personalcenter personalcenternum">
+                    <i class="new_icon"><strong style="display: none;"></strong></i>
+                    <span>我的</span>
+                </a>
+            </li>
+            <li>
+                <a href="gouwuche.html" data-url="/shoppingcart/index" page_click_button="底部_购物车" class="new_car_center">
+                    <i class="new_icon"><strong style="">2</strong></i>
+                    <span>购物车</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+	
+
+    
+  <!--以下是浮于显示屏左下角的购物袋-->
+  
+
+</body></html>

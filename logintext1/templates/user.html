@@ -1,0 +1,97 @@
+{% extends 'user_base.html' %}
+{% block content %}
+    <header id="header" class="u-header clearfix" xmlns="http://www.w3.org/1999/html">
+
+	    <div class="u-hd-left f-left">
+                <a href="javascript:void(0)" class="J_backToPrev"><span class="u-icon i-hd-back"></span></a>
+                </div>
+			     <div class="u-hd-tit"><span>个人中心</span></div>
+
+   </header>
+
+<!-- 未登录 -->
+<!--div class="w3l_main_grid1_sub">
+					<img src="images/1.png" alt=" " class="img-responsive" />
+					
+				</div-->
+                
+  
+  <!--body>
+    <br>  
+    <div style="width:200px" align="center">  
+        <div class="to3" align="center">  
+            <div class="to2" align="center">  
+                <div class="to1" align="center">  
+                    <img class="to" alt="aaa" src="images/aaa.jpg">  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+   </body-->
+  
+
+
+ 
+  
+
+
+
+<div class="userinfo">
+  <div class="userinfo_content">
+      <div style="width:200-px" align="center">
+      <div class="to3" align="center">
+            <div class="to2" align="center">
+                <div class="to1" align="center">
+                    <img class="to" alt="aaa" src="/static/images/indexlogo.jpg">
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+		<p> 欢迎您
+            <p class="username">{{username}}</p>
+        </p>
+
+  </div>
+</div>
+
+ <!--三种状态的订单-->
+<div class="userdiv user_order">
+  <ul class="order_state clearfix">
+    <li>
+            <a href="" class="">
+        <span class="wait_pay"></span>
+        <p>待支付<em>1</em></p>            <!--这个1是上角标未来要绑定数据库-->
+      </a>
+          </li>
+    <li>
+            <a href="//user-order-list-unreceive.html" class="">
+        <span class="wait_delivery"></span>
+        <p>待收货
+                  </p>
+      </a>
+          </li>
+    <li>
+      <a href="//user-order-list-more.html" class="">
+        <span class="all_orders"></span>
+        <p>更多订单</p>
+      </a>
+    </li>
+  </ul>
+ </div>
+
+<div class="s_links in_user_center userdiv">
+  <a href="xinzeng_dizhi.html"><em class="s_fav"></em>个人资料<span></span></a>
+</div>
+<div class="s_links in_user_center userdiv">
+  <a href="xinzeng_dizhi.html"><em class="s_addr"></em>配送地址<span></span></a>
+</div>
+
+<div class="s_links in_user_center userdiv">
+  <a href="xinzeng_dizhi.html"><em class="s_fav"></em>帮助中心<span></span></a>
+</div>
+
+
+{% endblock %}
+

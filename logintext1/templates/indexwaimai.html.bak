@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>陕服外卖</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/public.css">
+    <link rel="stylesheet" type="text/css" href="/static/style/home.css">
+	<link rel="stylesheet" type="text/css" href="/static/style/footer.css">
+	
+	
+	<link rel="stylesheet" type="text/css" href="/static/style/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/style/common1.css" media="all">
+
+<!--首页幻灯js-->
+<script type="text/javascript" src="/static/style/zepto.js"></script>
+<script type="text/javascript" src="/static/style/swipe.js"></script>
+<!--首页幻灯js end-->
+</head>
+<body>
+    <div class="loading_page" style="display: none;"></div>
+	
+	<div style="overflow:hidden;">
+	   <div class="clearboth wrap-logo-zn " id="logo"><img src="/static/images/indexlogo.jpg"></div>
+       <div class="searchnew" id="searchContainer"><div class="products-search-item"><div class="main-nav-search "><div class="input-group"><input autocomplete="off" id="input-main-nav-search" class="form-control" title="产品搜索" placeholder="正新鸡排一起来！" type="search"><span class="input-group-btn"><button class="btn5 submit" type="submit" id="btnSearch"><i class="search-icon"></i></button></span></div></div></div></div>
+	</div>
+	
+    <div class="banner openwebview" >
+	
+	
+	    <div style="-webkit-transform:translate3d(0,0,0);">
+		<div id="banner_box" class="box_swipe">
+			<ul style="list-style: none outside none; transition-duration: 500ms;">
+					<li>
+						<a onClick="return false;">
+							<img src="/static/images/200.jpg" alt="2" style="width:100%;">
+						</a>
+					</li>
+					<li>
+						<a onClick="return false;">
+							<img src="/static/images/200.jpg" alt="2" style="width:100%;">
+						</a>
+					</li>
+                    
+                    <li>
+						<a onClick="return false;">
+							<img src="/static/images/200.jpg" alt="2" style="width:100%;">
+						</a>
+					</li>
+                    
+                    <li>
+						<a onClick="return false;">
+							<img src="/static/images/200.jpg" alt="2" style="width:100%;">
+						</a>
+					</li>
+                    
+                    
+							</ul>
+			<ol>
+									
+				<li class="on"></li>
+				<li></li>
+                <li></li>
+                <li></li>
+
+			</ol>
+		</div>
+	</div>
+		<script>
+		$(function(){
+			new Swipe(document.getElementById('banner_box'), {
+				speed:500,
+				auto:3000,
+				callback: function(){
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+		});
+	</script>
+
+	</div>
+    <div class="prefecture clearfix openwebview" style="margin-bottom: 8px;">
+	 <a href="liebiao.html" data-url="/novelty/list" class="cool" page_click_button="新奇库">
+        <img class="fadeInImg" src="/static/sy_img/2.jpg">
+        <i>美食</i>
+     </a>
+<div class="prefecture_r">
+    <a href="liulanlishi liebiao2.html" data-url="/recommendproduct/index" class="sale" page_click_button="特卖汇">
+        <img class="fadeInImg" src="/static/sy_img/3.jpg">
+        <i>好吃不贵</i>
+        <span>1月10日更新</span>
+    </a>
+</div>
+<div class="prefecture_rb clearfix">
+    <a href="javascript:;" data-url="/preview/index" class="soon" page_click_button="即将开售">
+        <img class="fadeInImg" src="/static/sy_img/4.jpg">
+        <i><b>商家推荐</b><em>+21</em></i>
+    </a>
+    <a href="javascript:;" data-url="/popular/list" class="popular" page_click_button="正在流行">
+        <img class="fadeInImg" src="/static/sy_img/5.jpg">
+        <i>销量最多</i>
+    </a>
+</div>
+</div>
+    <div class="recommend openwebview">
+        <!--<div style="display: block;" class="tit">
+            <h2>您的专属推荐</h2>
+        </div>-->
+        <div class="wrap"><div class="item" page_click_button="类目_生活家">
+    <div class="caption">
+        <h3 class="caption_life"><a href="">生活家</a></h3>
+        <!--<span class="browse">(3.6万人正在浏览)</span>-->
+    </div>
+    <div class="item_brand"><a href="javascript:;" data-url="/index/activity/show/aid/3249" page_click_button="活动">
+            <img class="fadeInImg" _src="//upload1/2015/0109/5b628ff536acfadbf20fa304389f7b87-142080897751563300.jpg" src="/static/sy_img/5b628ff536acfadbf20fa304389f7b87-142080897751563300.jpg">
+            
+        </a></div>
+    <div class="item_con clearfix" page_click_button="单品">
+        <dl><dt><a href="javascript:;" data-url="//product/detail?pid=15012273794234&amp;from=1"><img class="fadeInImg" _src="//upload1/2015/0108/thumb_468_468_0195b80b910d6e07dad39ba9488a604c-142068899393529400.jpg?imageView2/0/w/608/h/608" src="sy_img/thumb_468_468_0195b80b910d6e07dad39ba9488a604c-1420688993935.jpg"></a></dt><dd><p class="txt">样样Q牛津布衣物折叠收纳篮</p><div class="price clearfix"><span class="now_price"><i>￥</i><em>17.6</em></span><span class="old_price"><i>￥</i><em>47.8</em></span></div></dd></dl><dl><dt><a href="javascript:;" data-url="//product/detail?pid=15012276248249&amp;from=1"><img class="fadeInImg" _src="//upload1/2015/0109/thumb_608_608_3473c485f3b279ad10589c72099a0fb0-142077246424044300.jpg" src="/static/sy_img/thumb_608_608_3473c485f3b279ad10589c72099a0fb0-1420772464240.jpg"></a></dt><dd><p class="txt">【包邮14.5】艾可思便携带盖硅胶套防漏杯</p><div class="price clearfix"><span class="now_price"><i>￥</i><em>14.5</em></span><span class="old_price"><i>￥</i><em>80</em></span></div></dd></dl>
+    </div>
+</div>
+<div class="layout-login-area" id="footer">
+		<div class="layout-login">
+						<span class="layout-lg-bar">528062317@qq.com </span>
+						<span class="layout-new-fr"><a href="">反馈</a></span>
+			</div>
+
+			<div class="layout-copyright">© 河北-向暖 版权所有</div>
+	 </div>
+
+
+
+
+</div>
+    </div>
+	
+    <div style="display: block;" class="footer_bar openwebview">
+        <ul class="warp clearfix">
+            <li><!--<li class="on">-->
+                <a href="/home/index" page_click_button="底部_首页">
+                    <i class="new_icon"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="fenlei.html" page_click_button="底部_品牌">
+                    <i class="new_icon"></i>
+                    <span>商家</span>
+                </a>
+            </li>
+            <li>
+                <a href="user.html" data-url="/i/index" page_click_button="底部_我的" class="to_personalcenter personalcenternum">
+                    <i class="new_icon"><strong style="display: none;"></strong></i>
+                    <span>我的</span>
+                </a>
+            </li>
+            <li>
+                <a href="gouwuche.html" data-url="/shoppingcart/index" page_click_button="底部_购物车" class="new_car_center">
+                    <i class="new_icon"><strong style="">2</strong></i>
+                    <span>购物车</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>
